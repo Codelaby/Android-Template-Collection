@@ -1,0 +1,17 @@
+<!-- Welcome screen -->
+<string name="welcome_title">Welcome Title</string>
+<string name="welcome_summary">The first thing you see is the welcome screen. This is your control center, a personal hub with a huge amount of information</string>
+
+<string name="welcome_feature_one_title">Feature one</string>
+<string name="welcome_feature_one_summary">This is a text of feature one.</string>
+
+<string name="welcome_feature_two_title">Feature two</string>
+<string name="welcome_feature_two_summary">This is a text of feature two.</string>
+
+<string name="welcome_feature_third_title">Feature third</string>
+<string name="welcome_feature_third_summary">This is a text of feature third.</string>
+
+<string name="welcome_advisory">This App does not collect analytics, sell your data to third parties, only show ads your decide track you across app. Your data is stored securely and privately on your device.</string>
+
+<string name="welcome_btn_continue">Get Started</string>
+<string name="welcome_btn_login">With account</string>
