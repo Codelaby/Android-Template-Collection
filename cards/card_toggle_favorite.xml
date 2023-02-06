@@ -1,0 +1,86 @@
+<com.google.android.material.card.MaterialCardView
+    style="@style/Widget.Material3.CardView.Elevated"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="16dp"
+    app:cardElevation="4dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:shapeAppearance="@style/ShapeAppearance.Rounded">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            style="@style/Widget.Material3.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="?attr/colorSecondary"
+            android:text="Get Tickets"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/supporting_text"
+            app:layout_constraintStart_toStartOf="@+id/supporting_text"
+            app:layout_constraintTop_toBottomOf="@id/supporting_text" />
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/headline_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:maxLines="2"
+            android:text="BORN PINK World Tour of Black Pink"
+            android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/container_image" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/supporting_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Take of tikets of Black Pink - BORN PINK World Tour - Mexico city -  2023-04-26 in Foro Sol"
+            android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+            app:layout_constraintEnd_toEndOf="@+id/headline_text"
+            app:layout_constraintStart_toStartOf="@+id/headline_text"
+            app:layout_constraintTop_toBottomOf="@+id/headline_text" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/container_image"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintDimensionRatio="H,3:2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Rounded.Bottom"
+            app:srcCompat="@drawable/black_pink_born_pink_world_tour" />
+
+        <CheckBox
+            android:id="@+id/toggle_favorite"
+            style="@style/Widget.Material3.Favorite.IconButton.Filled.Tonal"
+            android:hapticFeedbackEnabled="true"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+
+            android:enabled="true"
+            app:layout_constraintEnd_toEndOf="@+id/container_image"
+            app:layout_constraintTop_toTopOf="@+id/container_image" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
